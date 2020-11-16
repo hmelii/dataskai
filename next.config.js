@@ -12,7 +12,7 @@ module.exports = {
   },
   //assetPrefix: '',
   assetPrefix: !debug ? '/dataskai/' : '',
-  webpack: (config, { dev }) => {
+  webpack: (config,  { buildId, dev, isServer, defaultLoaders, webpack }) => {
     // Perform customizations to webpack config
     // console.log('webpack');
     // console.log(config.module.rules, dev);
@@ -21,10 +21,17 @@ module.exports = {
         rule.options.cacheDirectory = false
       }
       return rule
-    })
+    });
+    config.module.rules.push({
+      test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+      loader: require.resolve("url-loader")
+    });
     // Important: return the modified config
     return config
-  }/*,
+  },
+
+  /*,
+
   webpackDevMiddleware: (config) => {
     // Perform customizations to webpack dev middleware config
     // console.log('webpackDevMiddleware');

@@ -1,0 +1,54 @@
+
+.menu {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translate(0, -50%);
+}
+
+.menuList {
+  background: #fff;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+}
+
+.menuItem {
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.menuLink {
+  color: inherit;
+}
+
+.menuTrigger {
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.menuTriggerLine1,
+.menuTriggerLine2,
+.menuTriggerLine3 {
+  background: #f2f2f2;
+  width: 24px;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.menuTriggerLine2 {
+  top: 9px;
+}
+
+.menuTriggerLine3 {
+  top: 17px;
+}

@@ -4,7 +4,9 @@ export default function Wrapper({children}) {
   console.log(children)
   return (
     <div className={styles.wrapper}>
-      {children}
+      <div className={styles.wrapperIn}>
+        {children}
+      </div>
     </div>
   )
 }

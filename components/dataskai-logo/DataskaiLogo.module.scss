@@ -1,0 +1,30 @@
+.dataskaiLogo {
+  margin-bottom: 65px;
+}
+
+.dataskaiLogoImage {
+  background: url("../../images/dataskai_logo.svg") no-repeat;
+  background-size: contain;
+  padding-bottom: 10.20%;
+  margin-bottom: 10px;
+}
+
+.dataskaiLogoText,
+.dataskaiLogoTitle {
+  width: 163px;
+  margin-bottom: 13px;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+
+.dataskaiLogoTitleName {
+  display: inline-block;
+}
+
+.dataskaiLogoText {
+  margin-left: auto;
+}
+
+.dataskaiLogoTextWarn {
+  color: #abc537;
+}

@@ -1,0 +1,42 @@
+@import './utils/libs';
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/fonts';
+
+
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 62.5%;
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #0F1217;
+  height: 100%;
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: left;
+  word-wrap: break-word;
+
+
+
+
+}
+
+.slick-slider {
+  margin: 0 -18px;
+}
+
+.slick-slide {
+}
