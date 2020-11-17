@@ -1,0 +1,82 @@
+.testers {
+  padding: 34px 18px;
+  background-size: 100% 100%;
+  margin: 0 -18px 105px;
+
+
+  p {
+    margin: 0 0 8px;
+  }
+}
+
+.looking {
+  margin: -34px -18px 96px;
+  padding: 34px 18px 72px;
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    background: linear-gradient(278.03deg,  rgba(14,32,68,1) 0%,rgba(205,15,197,.4) 50%, rgba(205,15,197,0) 100%);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+
+.btn {
+  display: block;
+  border: 1px solid;
+  border-radius: 2px;
+  height: 40px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: (40 / 14);
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btnBgTransparent {
+  background-color: transparent;
+  border-color: #f2f2f2;
+  color: #f2f2f2;
+}
+
+.btnBg {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  color: #000;
+}
+
+.heading {
+  margin: 0 0 37px;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.btns {
+  padding: 38px 0 0;
+  p {
+   margin: 0 0 28px
+  }
+}
+
+.subHeading {
+  margin: 0 0 11px;
+  font-size: 2rem;
+  line-height: 1.4rem;
+}
+
+.docs {
+  background: url("../../images/Union.svg") no-repeat;
+  padding: 97px 0 0;
+}

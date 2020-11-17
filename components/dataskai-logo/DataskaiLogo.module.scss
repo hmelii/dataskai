@@ -1,5 +1,8 @@
+@import '../../styles/utils/vars';
+
 .dataskaiLogo {
   margin-bottom: 65px;
+
 }
 
 .dataskaiLogoImage {
@@ -7,6 +10,10 @@
   background-size: contain;
   padding-bottom: 10.20%;
   margin-bottom: 10px;
+
+  @media (min-width: $tableWidth) {
+    margin-bottom: 16px;
+  }
 }
 
 .dataskaiLogoText,
@@ -15,7 +22,15 @@
   margin-bottom: 13px;
   font-size: 1.3rem;
   line-height: 1.4;
+
+  @media (min-width: $tableWidth) {
+    width: 309px;
+    margin-bottom: 18px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
 }
+
 
 .dataskaiLogoTitleName {
   display: inline-block;
@@ -23,6 +38,10 @@
 
 .dataskaiLogoText {
   margin-left: auto;
+
+  @media (min-width: $tableWidth) {
+    margin-right: 160px;
+  }
 }
 
 .dataskaiLogoTextWarn {

@@ -1,0 +1,92 @@
+@import '../../styles/utils/vars';
+
+
+.carousel {
+  margin-bottom: 60px;
+}
+
+
+.carouselTabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 -7px 44px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tableWidth) {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0 15px;
+  }
+}
+
+.carouselTabsItem {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  color: #f2f2f2;
+  line-height: 1.25;
+}
+
+.carouselTabsLink {
+  display: block;
+  padding: 7px;
+  color: inherit;
+  transition: all .3s ease;
+}
+
+.carouselTabsLinkActive {
+  color: #ABC537;
+}
+
+.carouselItem {
+  width: calc(100vw - 36px);
+  max-width: 924px;
+
+  @media (min-width: $tableWidth) {
+    width: auto;
+    display: grid;
+    grid-template-columns: 296px 1fr;
+    max-width: none;
+  }
+}
+
+.carouselFig {
+  margin-bottom: 35px;
+
+  @media (min-width: $tableWidth) {
+    order: 2;
+    margin-left: 17px;
+  }
+}
+
+.carouselTitle {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  line-height: 1.4;
+
+  @media (min-width: $tableWidth) {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    line-height: 1.33;
+  }
+}
+
+.carouselSummary {
+  font-size: 1.4rem;
+  line-height: 1.4;
+
+  @media (min-width: $tableWidth) {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+}
+
+.carouselContext {
+  @media (min-width: $tableWidth) {
+    order: 1;
+  }
+}
+
+.carouselImg {
+  width: 100%;
+}

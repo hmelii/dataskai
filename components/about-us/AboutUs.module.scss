@@ -1,7 +1,23 @@
+@import '../../styles/utils/vars';
+
 .aboutUs {
+
+
   margin-bottom: 55px;
+
+  @media (min-width: $tableWidth) {
+    max-width: 472px;
+    margin-left: auto;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
   p {
     margin: 0 0 4px;
+
+    @media (min-width: $tableWidth) {
+      margin-bottom: 42px;
+    }
   }
 }
 
@@ -9,9 +25,15 @@
   margin: 0 0 30px;
   padding: 0;
   color: #ABC537;
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 1.2;
   font-weight: normal;
+
+  @media (min-width: $tableWidth) {
+    margin-bottom: 16px;
+    font-size: 4.2rem;
+    line-height: 1.33;
+  }
 }
 
 .aboutUsWarn {

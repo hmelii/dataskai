@@ -4,11 +4,11 @@ export default function DataskaiLogo() {
   return (
     <div className={styles.dataskaiLogo}>
       <div className={styles.dataskaiLogoTitle}>
-        Developed by&nbsp;a&nbsp;team of&nbsp;programmers and <span className={styles.dataskaiLogoTitleName}>ML&ndash;enthusiasts</span>
+        Dataskai is developed by a team of programmers and ML-enthusiasts
       </div>
       <div className={styles.dataskaiLogoImage} />
       <div className={styles.dataskaiLogoText}>
-        the tool for AI/ML projects concentrated on&nbsp;<span className={styles.dataskaiLogoTextWarn}>team work</span> and rapid development
+        the framework for AI/ML projects concentrated on <a href="#">team work</a>  and rapid development
       </div>
     </div>
   )
