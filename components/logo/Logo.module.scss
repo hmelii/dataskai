@@ -1,5 +1,8 @@
+@import '../../styles/utils/vars';
+
 .logo {
-  background: #F2F2F2;
+  background: url("../../images/LOGO.svg") no-repeat 50%;
+  background-size: contain;
   width: 81px;
   height: 20px;
   position: absolute;
@@ -7,6 +10,13 @@
   left: 55px;
   bottom: 0;
   margin: auto;
+
+  @media (min-width: $tableWidth) {
+    width: 120px;
+    height: 56px;
+    top: 18px;
+    left: 0;
+  }
 }
 
 .logoLink {

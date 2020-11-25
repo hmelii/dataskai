@@ -26,8 +26,8 @@
   @media (min-width: $tableWidth) {
     width: 309px;
     margin-bottom: 18px;
-    font-size: 1.6rem;
-    line-height: 1.5;
+    font-size: 1.8rem;
+    line-height: (24 / 18);
   }
 }
 

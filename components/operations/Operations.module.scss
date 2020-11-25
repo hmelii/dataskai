@@ -1,30 +1,66 @@
+@import '../../styles/utils/vars';
+
+.operations {
+  margin-bottom: 160px;
+}
 .heading {
   margin: 0 0 6px;
-  font-size: 3rem;
-  line-height: 1.2;
-  font-weight: normal;
+  font-size: 4.2rem;
+  line-height: (56 / 42);
+  font-weight: bold;
+
+  @media (min-width: $tableWidth) {
+    font-size: 4.2rem;
+    line-height: (56 / 42);
+  }
 }
 
 .subHeading {
-  margin-bottom: 32px;
+  margin: 0 0 32px;
   font-size: 2rem;
   line-height: 1.4;
   font-weight: normal;
+
+  @media (min-width: $tableWidth) {
+    font-size: 2.4rem;
+    line-height: (32 / 24);
+  }
 }
 
 .list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tableWidth) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 29px;
+  }
 }
 
 .listItem {
   margin: 0 0 34px;
   padding: 0;
+
+  font-size: 1.4rem;
+  line-height: 1.42;
+
+  @media (min-width: $tableWidth) {
+    margin: 0;
+    font-size: 1.8rem;
+    line-height: (24 / 18);
+  }
 }
 
 .listTitle {
   margin-bottom: 13px;
   font-size: 2.8rem;
   line-height: 1;
+
+  @media (min-width: $tableWidth) {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    line-height: (32 / 24);
+  }
 }

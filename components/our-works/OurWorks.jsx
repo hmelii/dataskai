@@ -8,37 +8,37 @@ export default function OurWorks() {
       id: 1,
       preview: img,
       title: 'Team Leaderboard',
-      summary: 'This interface allows you to&nbsp;check metrics for all submitted solutions on&nbsp;current task, search for best/worst metric values, make fast text search for submits, hide some fields, etc. Moreover, breadcrumbs on&nbsp;top of&nbsp;the window allows you to&nbsp;switch to&nbsp;all available in&nbsp;GUI tasks and check out scores on&nbsp;it.'
+      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
     },
     {
       id: 2,
       preview: img,
       title: 'Project Wizard ',
-      summary: 'This interface allows you to&nbsp;check metrics for all submitted solutions on&nbsp;current task, search for best/worst metric values, make fast text search for submits, hide some fields, etc. Moreover, breadcrumbs on&nbsp;top of&nbsp;the window allows you to&nbsp;switch to&nbsp;all available in&nbsp;GUI tasks and check out scores on&nbsp;it.'
+      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
     },
     {
       id: 3,
       preview: img,
       title: 'Data Loader and Data Store',
-      summary: 'This interface allows you to&nbsp;check metrics for all submitted solutions on&nbsp;current task, search for best/worst metric values, make fast text search for submits, hide some fields, etc. Moreover, breadcrumbs on&nbsp;top of&nbsp;the window allows you to&nbsp;switch to&nbsp;all available in&nbsp;GUI tasks and check out scores on&nbsp;it.'
+      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
     },
     {
       id: 4,
       preview: img,
       title: 'Feature Loader and Feature Store',
-      summary: 'This interface allows you to&nbsp;check metrics for all submitted solutions on&nbsp;current task, search for best/worst metric values, make fast text search for submits, hide some fields, etc. Moreover, breadcrumbs on&nbsp;top of&nbsp;the window allows you to&nbsp;switch to&nbsp;all available in&nbsp;GUI tasks and check out scores on&nbsp;it.'
+      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
     },
     {
       id: 5,
       preview: img,
       title: 'Metrics Service and Submits Storage',
-      summary: 'This interface allows you to&nbsp;check metrics for all submitted solutions on&nbsp;current task, search for best/worst metric values, make fast text search for submits, hide some fields, etc. Moreover, breadcrumbs on&nbsp;top of&nbsp;the window allows you to&nbsp;switch to&nbsp;all available in&nbsp;GUI tasks and check out scores on&nbsp;it.'
+      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
     },
     {
       id: 6,
       preview: img,
       title: 'Feature Extractor and Prediction Builder',
-      summary: 'This interface allows you to&nbsp;check metrics for all submitted solutions on&nbsp;current task, search for best/worst metric values, make fast text search for submits, hide some fields, etc. Moreover, breadcrumbs on&nbsp;top of&nbsp;the window allows you to&nbsp;switch to&nbsp;all available in&nbsp;GUI tasks and check out scores on&nbsp;it.'
+      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
     }
   ];
 

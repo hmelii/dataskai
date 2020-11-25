@@ -3,33 +3,27 @@
 @import './utils/mixins';
 @import './utils/fonts';
 
-
-
 html {
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
   font-size: 62.5%;
-
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: #0F1217;
+  background: #0a0915 url("../images/bg.svg") no-repeat 50% 0 fixed;
+  background-size: auto 100vh;
   height: 100%;
   color: $default-color;
-  font-size: rem(14, 10);
+  font-size: rem(18, 10);
   font-family: $mainFont;
   line-height: 1.5;
   text-align: left;
   word-wrap: break-word;
-
-
-
 
 }
 
@@ -38,7 +32,7 @@ body {
 
   .slick-slider {
 
-    margin: 0 -18px;
+    margin: 0 -18px 0 0;
 
 
     @media (min-width: $tableWidth) {
@@ -56,16 +50,22 @@ body {
   }
 
   .slick-arrow {
+    display: none!important;
+
+    @media (min-width: $tableWidth) {
+      display: block!important;
+    }
 
     width: 43px;
     height: 43px;
     top: 0;
     bottom: 0;
     margin: auto;
+    transition: all .3s ease;
 
     &:before {
       content: '';
-      border: solid #4F4F4F;
+      border: solid #fff;
       width: inherit;
       height: inherit;
       display: block;
@@ -96,10 +96,14 @@ a, button, label {
 }
 
 a {
-  color: #ABC537;
+  color: $primary-color;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
+}
+
+.ril__navButtons {
+  display: none;
 }

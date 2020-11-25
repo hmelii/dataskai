@@ -8,34 +8,35 @@
   @media (min-width: $tableWidth) {
     max-width: 472px;
     margin-left: auto;
-    font-size: 1.6rem;
-    line-height: 1.5;
+    font-size: 1.8rem;
+    line-height: (24 / 18);
   }
 
   p {
+
     margin: 0 0 4px;
 
     @media (min-width: $tableWidth) {
+      max-width: 390px;
       margin-bottom: 42px;
     }
   }
 }
 
 .aboutUsHeading {
+  min-height: 168px;
   margin: 0 0 30px;
   padding: 0;
-  color: #ABC537;
+  color: $primary-color;
   font-size: 3rem;
   line-height: 1.2;
-  font-weight: normal;
+  font-weight: bold;
+  white-space: pre-line;
 
   @media (min-width: $tableWidth) {
     margin-bottom: 16px;
     font-size: 4.2rem;
-    line-height: 1.33;
+    line-height: (56 / 42);
   }
 }
 
-.aboutUsWarn {
-  color: #abc537;
-}

@@ -1,8 +1,28 @@
+@import '../../styles/utils/vars';
+
+.usage {
+  @media (min-width: $tableWidth) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 98px;
+  }
+}
+
 .heading {
   margin: 0 0 32px;
   font-size: 3rem;
   line-height: 1.2;
-  font-weight: normal;
+  font-weight: bold;
+
+  @media (min-width: $tableWidth) {
+    margin-bottom: 26px;
+    font-size: 4.2rem;
+    line-height: (56 / 42);
+  }
+}
+
+.ib {
+  display: inline-block;
 }
 
 .textarea {
@@ -34,8 +54,19 @@
   font-size: 2rem;
   line-height: 1.4;
 
+  @media (min-width: $tableWidth) {
+    font-size: 2.4rem;
+    line-height: (32 / 24);
+
+  }
+
   p {
     margin: 0 0 12px;
+
+    @media (min-width: $tableWidth) {
+
+      margin: 0 0 12px;
+    }
   }
 }
 
@@ -53,17 +84,44 @@
   font-weight: bold;
   line-height: (40 / 14);
   text-align: center;
-}
 
-.form {
-  p {
-    margin:  0 0 20px;
+  @media (min-width: $tableWidth) {
+    height: 42px;
+    width: 226px;
+
+    font-size: 1.8rem;
+    line-height: (42 / 18);
   }
 }
 
-.lbs {
-  margin: 0 0 6px;
+.form {
+  font-size: 1.4rem;
+  line-height: 1.42;
+
+  @media (min-width: $tableWidth) {
+    font-size: 1.8rem;
+    line-height: (24 / 18);
+  }
+
+  p {
+    margin: 0 0 20px;
+
+    @media (min-width: $tableWidth) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .lbs {
+    margin: 0 0 6px;
+
+    @media (min-width: $tableWidth) {
+      margin-bottom: 16px;
+
+    }
+  }
 }
+
+
 
 .btns {
   text-align: right;
@@ -73,5 +131,11 @@
   margin: 0 0 12px;
   font-size: 3rem;
   line-height: 1.2;
-  font-weight: normal;
+  font-weight: bold;
+
+  @media (min-width: $tableWidth) {
+    margin-bottom: 24px;
+    font-size: 4.2rem;
+    line-height: (56 / 42);
+  }
 }

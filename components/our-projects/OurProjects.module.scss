@@ -1,0 +1,15 @@
+@import '../../styles/utils/vars';
+
+.heading {
+  margin: 0 0 13px;
+  color: #fff;
+  font-size: 3.4rem;
+  font-weight: bold;
+  line-height: 1.1;
+
+  @media (min-width: $tableWidth) {
+    margin-bottom: 24px;
+    font-size: 4.2rem;
+    line-height: (42 / 56);
+  }
+}

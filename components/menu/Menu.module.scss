@@ -1,9 +1,15 @@
+@import '../../styles/utils/vars';
 
 .menu {
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translate(0, -50%);
+
+  @media (min-width: $tableWidth) {
+    left: 140px;
+    right: 20px;
+  }
 }
 
 .menuList {
@@ -13,16 +19,36 @@
   padding: 0;
   list-style: none;
   position: absolute;
+
+  @media (min-width: $tableWidth) {
+    background: none;
+    display: grid;
+    position: relative;
+    grid-auto-flow: column;
+    justify-content: right;
+    grid-gap: 0 50px;
+
+  }
 }
 
 .menuItem {
   margin: 0;
   padding: 0;
   color: #000;
+
+  @media (min-width: $tableWidth) {
+    display: block;
+    color: #F2F2F2;
+  }
 }
 
 .menuLink {
+  display: block;
   color: inherit;
+
+  @media (min-width: $tableWidth) {
+    padding: 0 20px;
+  }
 }
 
 .menuTrigger {
@@ -32,6 +58,11 @@
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
+
+  @media (min-width: $tableWidth) {
+
+    display: none;
+  }
 }
 
 .menuTriggerLine1,

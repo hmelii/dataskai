@@ -1,17 +1,19 @@
-import {useState, useRef, useEffect} from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styles from './Carousel.module.scss';
 
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import useWindowSize from "../../hooks/UseWindowResize";
+import LightboxComponent from "../lightbox-component/LightboxComponent";
 
 
 function CarouselTabs({ items, currentIndex, tabClick }) {
 
   return (
     <ul className={styles.carouselTabs}>
-      {items.map((tab, index) => <CarouselTabsItem tab={tab} active={currentIndex===index} tabClick={tabClick} index={index} key={tab.id} />)}
+      {items.map((tab, index) => <CarouselTabsItem tab={tab} active={currentIndex === index} tabClick={tabClick} index={index} key={tab.id}/>)}
     </ul>
   )
 }
@@ -22,39 +24,44 @@ function CarouselTabsItem({ tab, active, index, tabClick }) {
   }
   return (
     <li className={styles.carouselTabsItem}>
-      <a className={`${styles.carouselTabsLink} ${active?styles.carouselTabsLinkActive:''}`} onClick={() => handleTabClick(index)}>{tab.title}</a>
+      <a className={`${styles.carouselTabsLink} ${active ? styles.carouselTabsLinkActive : ''}`} onClick={() => handleTabClick(index)}>{tab.title}</a>
     </li>
   )
 }
 
-function CarouselItem({ item }) {
+function CarouselItem({ item, imageClick }) {
   return (
     <div className={styles.carouselItem}>
       <div className={styles.carouselFig}>
-        <img className={styles.carouselImg} src={item.preview} alt={item.title} />
+        {item.preview ? <a className={styles.carouselLink} onClick={() => imageClick(item.preview)}><img className={styles.carouselImg} src={item.preview} alt={item.title}/></a>  : <div className={styles.carouselMedia} dangerouslySetInnerHTML={{ __html: item.html }}/>}
       </div>
       <div className={styles.carouselContext}>
         <div className={styles.carouselTitle}>
           {item.title}
         </div>
-        <div className={styles.carouselSummary}>
-          {item.summary}
+        <div className={styles.carouselSummary} dangerouslySetInnerHTML={{ __html: item.summary }}>
         </div>
       </div>
     </div>
   );
 }
 
-function CarouselItems({ items, handleChangeCurrentIndex, clickedTabIndex }) {
+function CarouselItems({ items, handleChangeCurrentIndex, clickedTabIndex, imageClick }) {
   const slider = useRef(null);
+  const [variableWidth, setVariableWidth] = useState(false);
+  const [widthWidth] = useWindowSize();
+
+  useEffect(() => {
+    setVariableWidth(widthWidth < 768);
+  }, [widthWidth]);
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    variableWidth: true,
+    variableWidth: variableWidth,
     beforeChange: (current, next) => {
       handleChangeCurrentIndex(next)
     }
@@ -62,10 +69,9 @@ function CarouselItems({ items, handleChangeCurrentIndex, clickedTabIndex }) {
 
   useEffect(() => {
     if (clickedTabIndex !== null) {
-      console.log(slider, clickedTabIndex)
       slider.current.slickGoTo(clickedTabIndex)
     }
-  }, [clickedTabIndex])
+  }, [clickedTabIndex]);
 
 
   return (
@@ -73,8 +79,7 @@ function CarouselItems({ items, handleChangeCurrentIndex, clickedTabIndex }) {
       ref={slider}
       {...settings}
     >
-      { items.map(slide => <CarouselItem item={slide} key={slide.id} />) }
-
+      {items.map(slide => <CarouselItem item={slide} key={slide.id} imageClick={imageClick}/>)}
     </Slider>
   )
 }
@@ -82,17 +87,33 @@ function CarouselItems({ items, handleChangeCurrentIndex, clickedTabIndex }) {
 export default function Carousel({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [clickedTabIndex, setClickedTabIndex] = useState(null);
+  const [images, setImages] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+
 
   const handleChangeCurrentIndex = index => setCurrentIndex(index);
 
   const tabClick = (index) => {
-    setClickedTabIndex(index)
+    setClickedTabIndex(index);
+  }
+
+  const imageClick = (image) => {
+    console.log(image)
+    setImages([image]);
+    setIsOpen(true);
+  }
+
+  const closeClick = () => {
+    setIsOpen(false)
   }
 
   return (
-    <div className={styles.carousel}>
-      <CarouselTabs items={items} currentIndex={currentIndex} tabClick={tabClick}/>
-      <CarouselItems items={items} handleChangeCurrentIndex={handleChangeCurrentIndex} clickedTabIndex={clickedTabIndex} />
-    </div>
+    <>
+      <div className={styles.carousel}>
+        <CarouselTabs items={items} currentIndex={currentIndex} tabClick={tabClick}/>
+        <CarouselItems items={items} handleChangeCurrentIndex={handleChangeCurrentIndex} clickedTabIndex={clickedTabIndex} imageClick={imageClick}/>
+      </div>
+      <LightboxComponent images={images} isOpen={isOpen} closeClick={closeClick}/>
+    </>
   )
 }

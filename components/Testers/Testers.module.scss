@@ -1,11 +1,26 @@
+@import '../../styles/utils/vars';
+
 .testers {
   padding: 34px 18px;
   background-size: 100% 100%;
   margin: 0 -18px 105px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tableWidth) {
+    display: grid;
+    padding: 90px 0;
+    grid-template-columns: 1fr 307px;
+    grid-gap: 0 160px;
+  }
 
 
   p {
     margin: 0 0 8px;
+
+    @media (min-width: $tableWidth) {
+      margin: 0;
+    }
   }
 }
 
@@ -15,9 +30,17 @@
   position: relative;
   z-index: 1;
 
+  @media (min-width: $tableWidth) {
+    margin: 0;
+    padding: 0;
+    position: static;
+    font-size: 2.4rem;
+    line-height: (32 / 24);
+  }
+
   &:before {
     content: '';
-    background: linear-gradient(278.03deg,  rgba(14,32,68,1) 0%,rgba(205,15,197,.4) 50%, rgba(205,15,197,0) 100%);
+    background: linear-gradient(278.03deg, rgba(14, 32, 68, 1) 0%, rgba(205, 15, 197, .4) 50%, rgba(205, 15, 197, 0) 100%);
 
     position: absolute;
     top: 0;
@@ -25,6 +48,13 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+
+    @media (min-width: $tableWidth) {
+      width: 100vw;
+      right: 50%;
+      left: auto;
+      transform: translate(50%, 0);
+    }
   }
 }
 
@@ -33,11 +63,21 @@
   border: 1px solid;
   border-radius: 2px;
   height: 40px;
+  padding: 0 16px;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: (40 / 14);
   text-align: center;
   text-decoration: none;
+
+  @media (min-width: $tableWidth) {
+    display: inline-block;
+    min-width: 300px;
+    height: 44px;
+    font-size: 2rem;
+
+    line-height: (44 / 20);
+  }
 
   &:hover {
     text-decoration: none;
@@ -61,12 +101,23 @@
   font-size: 3rem;
   line-height: 1.2;
   font-weight: normal;
+
+  @media (min-width: $tableWidth) {
+    margin-bottom: 64px;
+    font-size: 4.2rem;
+    line-height: (56 / 42);
+  }
 }
 
 .btns {
   padding: 38px 0 0;
+
+  @media (min-width: $tableWidth) {
+    text-align: center;
+  }
+
   p {
-   margin: 0 0 28px
+    margin: 0 0 28px
   }
 }
 
@@ -74,9 +125,26 @@
   margin: 0 0 11px;
   font-size: 2rem;
   line-height: 1.4rem;
+
+  @media (min-width: $tableWidth) {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    line-height: (32 / 24);
+  }
 }
 
 .docs {
   background: url("../../images/Union.svg") no-repeat;
   padding: 97px 0 0;
+
+  font-size: 1.4rem;
+  line-height: 1.43;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tableWidth) {
+    margin-top: 50px;
+    font-size: 1.8rem;
+    line-height: (24 / 18);
+  }
 }

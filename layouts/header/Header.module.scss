@@ -1,4 +1,10 @@
+@import '../../styles/utils/vars';
+
 .header {
   height: 50px;
   position: relative;
+
+  @media (min-width: $tableWidth) {
+    height: 108px;
+  }
 }

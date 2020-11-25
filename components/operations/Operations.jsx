@@ -22,32 +22,32 @@ export default function Operations() {
   const operations = [
     {
       id: 1,
-      title: 'Task and target loader',
-      summary: 'At any moment you can see teammate progress'
+      title: 'Templates',
+      summary: 'Wizard for generating and configuring ML/AI projects. Project structure and architecture fitted for long running projects (1month +).'
     },
     {
       id: 2,
-      title: 'Feature Store',
-      summary: 'Effectively search and use features for solving DS tasks Build self-explanatory feature naming system for easy interpretation and dialog with experts Create automatic services for interpretation and explanation of features for experts and managers.'
+      title: 'Architecture',
+      summary: 'EService-oriented architecture, based on docker technology. Framework is built on top of opensource products, libraries and components.'
     },
     {
       id: 3,
-      title: 'Metric Service',
-      summary: 'Effectively search and use features for solving DS tasks.Build self-explanatory feature naming system for easy interpretation and dialog with experts Create automatic services for interpretation and explanation of features for experts and managers.'
+      title: 'Installation',
+      summary: 'Use local installation on your own premises for short-term team work, or installation in datacenters/cloud premises for corporate use.'
     },
     {
       id: 4,
-      title: 'Submitter',
-      summary: 'Effectively search and use features for solving DS tasks.Build self-explanatory feature naming system for easy interpretation and dialog with experts Create automatic services for interpretation and explanation of features for experts and managers.'
+      title: 'MLOps',
+      summary: 'Deploy AI/ML solutions  in framework instance. Datascientist have end-to-end responsibility for the whole AI/ML solution.'
     }
 
   ];
 
   return (
-    <>
+    <div className={styles.operations}>
       <h3 className={styles.heading}>Make frequent operations easier </h3>
       <h4 className={styles.subHeading}>even don't do it at all</h4>
       <List items={operations} />
-    </>
+    </div>
   )
 }
