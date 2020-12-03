@@ -8,7 +8,9 @@ function Logo() {
 
 function Slogan() {
   return (
-    <div className={styles.slogan}>Dataskai is developed by a team of programmers and ML-enthusiasts who believe that teamwork and best practices are the future of AI/ML solutions.</div>
+    <div className={styles.slogan}>
+      <p>Dataskai is developed by a team of programmers and ML-enthusiasts who believe that teamwork and best practices are the future of AI/ML solutions.</p>
+    </div>
   )
 }
 
@@ -27,7 +29,7 @@ function Nav() {
       url: '/',
       name: 'Documentation',
     },
-    {
+   /* {
       id: 2,
       url: '/',
       name: 'Contact us',
@@ -46,7 +48,7 @@ function Nav() {
       id: 5,
       url: '/',
       name: 'List of best practicies',
-    },
+    },*/
     {
       id: 6,
       url: '/',
@@ -76,7 +78,7 @@ function Privacy() {
 
 function ContactUs() {
   return (
-    <div className={styles.contactUs}>If you notice an error on the page or some link doesn't open, please, don't hesitate to <a className={styles.contactUslink}>contact us.</a> </div>
+    <div className={styles.contactUs}>We would be happy to hear from you. Don’t hesitate to send us your thoughts if you have any ideas or comments — <a href="mailto:betatesters@dataskai.com">betatesters@dataskai.com</a> </div>
   )
 }
 

@@ -4,7 +4,7 @@ export default function DataskaiLogo() {
   return (
     <div className={styles.dataskaiLogo}>
       <div className={styles.dataskaiLogoTitle}>
-        Dataskai is developed by a team of programmers and ML-enthusiasts
+        Developed by a team of programmers and ML-enthusiasts
       </div>
       <div className={styles.dataskaiLogoImage} />
       <div className={styles.dataskaiLogoText}>

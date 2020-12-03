@@ -3,22 +3,24 @@
 .aboutUs {
 
 
-  margin-bottom: 55px;
+  margin-bottom: 70px;
 
   @media (min-width: $tableWidth) {
+    margin-bottom: 138px;
     max-width: 472px;
     margin-left: auto;
+
     font-size: 1.8rem;
     line-height: (24 / 18);
   }
 
   p {
 
-    margin: 0 0 4px;
+    margin: 0 0 24px;
 
     @media (min-width: $tableWidth) {
       max-width: 390px;
-      margin-bottom: 42px;
+      margin-bottom: 18px;
     }
   }
 }
@@ -28,14 +30,15 @@
   margin: 0 0 30px;
   padding: 0;
   color: $primary-color;
+  font-family: 'Ubuntu Mono', Consolas, Monaco, sans-serif;
   font-size: 3rem;
   line-height: 1.2;
-  font-weight: bold;
+  font-weight: normal;
   white-space: pre-line;
 
   @media (min-width: $tableWidth) {
     margin-bottom: 16px;
-    font-size: 4.2rem;
+    font-size: 4rem;
     line-height: (56 / 42);
   }
 }

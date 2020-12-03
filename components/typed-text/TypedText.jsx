@@ -1,6 +1,6 @@
 import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function TypedText({texts}) {
   const [index, setIndex] = useState(0);
@@ -28,7 +28,7 @@ export default function TypedText({texts}) {
       texts && texts[index] ?
         <Typist key={index} cursor={cursor} startDelay={2000} onTypingDone={typingDone}>
           {texts[index]}
-          <Typist.Backspace count={texts[index].length} delay={2000}/>
+          <Typist.Delay  ms={4000}/>
         </Typist>
         : ''
     }

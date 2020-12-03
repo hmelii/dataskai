@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import useWindowSize from "../../hooks/UseWindowResize";
 import LightboxComponent from "../lightbox-component/LightboxComponent";
+import AsciinemaPlayer from "../asciinema-player/AsciinemaPlayer";
 
 
 function CarouselTabs({ items, currentIndex, tabClick }) {
@@ -33,7 +34,7 @@ function CarouselItem({ item, imageClick }) {
   return (
     <div className={styles.carouselItem}>
       <div className={styles.carouselFig}>
-        {item.preview ? <a className={styles.carouselLink} onClick={() => imageClick(item.preview)}><img className={styles.carouselImg} src={item.preview} alt={item.title}/></a>  : <div className={styles.carouselMedia} dangerouslySetInnerHTML={{ __html: item.html }}/>}
+        {item.preview ? <a className={styles.carouselLink} onClick={() => imageClick(item.preview)}><img className={styles.carouselImg} src={item.preview} alt={item.title}/></a>  : item.html ? <div className={styles.carouselMedia} dangerouslySetInnerHTML={{ __html: item.html }}/> : item.asciicinema ? <div className={styles.carouselAscii}><AsciinemaPlayer src={ item.asciicinema } /></div> : ''}
       </div>
       <div className={styles.carouselContext}>
         <div className={styles.carouselTitle}>

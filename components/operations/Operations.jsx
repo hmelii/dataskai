@@ -23,22 +23,22 @@ export default function Operations() {
     {
       id: 1,
       title: 'Templates',
-      summary: 'Wizard for generating and configuring ML/AI projects. Project structure and architecture fitted for long running projects (1month +).'
+      summary: 'Wizard for generating and configuring ML/AI projects. Project structure and architecture fitted for mid and long time range projects (1month +).'
     },
     {
       id: 2,
       title: 'Architecture',
-      summary: 'EService-oriented architecture, based on docker technology. Framework is built on top of opensource products, libraries and components.'
+      summary: 'Service-oriented architecture, based on docker technology. Opened and extendable set of tools. Framework is built on top of opensource products, libraries and components.'
     },
     {
       id: 3,
       title: 'Installation',
-      summary: 'Use local installation on your own premises for short-term team work, or installation in datacenters/cloud premises for corporate use.'
+      summary: 'Use local installation on your own premises for team work, or installation in datacenters/cloud premises for corporate use.'
     },
     {
       id: 4,
       title: 'MLOps',
-      summary: 'Deploy AI/ML solutions  in framework instance. Datascientist have end-to-end responsibility for the whole AI/ML solution.'
+      summary: 'Deploy AI/ML solutions  in framework instance. Engage Datascientists with end-to-end responsibility for the whole AI/ML solution.'
     }
 
   ];

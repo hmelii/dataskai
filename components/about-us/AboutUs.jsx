@@ -12,7 +12,7 @@ export default function AboutUs() {
             `Share results\n of your work with\n team`,
             `Separate metrics\n computation\n from solution`,
             `Dev/Prod parity\n in ML`,
-            `Keep in simple,\n sweetie`
+            `Keep it simple,\n sweetie`
           ]
         } />
 

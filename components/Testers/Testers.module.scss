@@ -1,14 +1,15 @@
 @import '../../styles/utils/vars';
 
 .testers {
-  padding: 34px 18px;
+  padding: 50px 18px 0;
   background-size: 100% 100%;
-  margin: 0 -18px 105px;
+  margin: 0 -18px 70px;
   position: relative;
   z-index: 1;
 
   @media (min-width: $tableWidth) {
     display: grid;
+    margin: 0 0 100px;
     padding: 90px 0;
     grid-template-columns: 1fr 307px;
     grid-gap: 0 160px;
@@ -19,7 +20,7 @@
     margin: 0 0 8px;
 
     @media (min-width: $tableWidth) {
-      margin: 0;
+      margin: 0 0 16px;
     }
   }
 }
@@ -29,6 +30,8 @@
   padding: 34px 18px 72px;
   position: relative;
   z-index: 1;
+  font-size: 1.6rem;
+  line-height: (20 / 16);
 
   @media (min-width: $tableWidth) {
     margin: 0;
@@ -65,7 +68,7 @@
   height: 40px;
   padding: 0 16px;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: (40 / 14);
   text-align: center;
   text-decoration: none;
@@ -99,13 +102,16 @@
 .heading {
   margin: 0 0 37px;
   font-size: 3rem;
-  line-height: 1.2;
+  line-height: (36 / 30);
   font-weight: normal;
 
+
   @media (min-width: $tableWidth) {
-    margin-bottom: 64px;
+    margin-bottom: 40px;
     font-size: 4.2rem;
     line-height: (56 / 42);
+    font-weight: 600;
+
   }
 }
 
@@ -113,18 +119,18 @@
   padding: 38px 0 0;
 
   @media (min-width: $tableWidth) {
-    text-align: center;
+    text-align: left;
   }
 
   p {
-    margin: 0 0 28px
+    margin: 0 0 3px
   }
 }
 
 .subHeading {
   margin: 0 0 11px;
   font-size: 2rem;
-  line-height: 1.4rem;
+  line-height: (28 / 20);
 
   @media (min-width: $tableWidth) {
     margin-bottom: 24px;
@@ -138,13 +144,13 @@
   padding: 97px 0 0;
 
   font-size: 1.4rem;
-  line-height: 1.43;
+  line-height: (20 / 14);
   position: relative;
   z-index: 1;
 
   @media (min-width: $tableWidth) {
     margin-top: 50px;
-    font-size: 1.8rem;
-    line-height: (24 / 18);
+    font-size: 1.6rem;
+    line-height: (24 / 16);
   }
 }

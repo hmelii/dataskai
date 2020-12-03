@@ -1,5 +1,6 @@
 import styles from './OurWorks.module.scss';
-import img from '../../images/content/pic1.png';
+import img from '../../images/content/pic2.png';
+import img2 from '../../images/content/pic3.png';
 import Carousel from "../carousel/Carousel";
 
 export default function OurWorks() {
@@ -8,44 +9,53 @@ export default function OurWorks() {
       id: 1,
       preview: img,
       title: 'Team Leaderboard',
-      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
+      summary: `<p>Check out, compare and share scores of your team test via GUI.</p> 
+                <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, switch between tasks, compare results in task and more.</p>`
     },
     {
       id: 2,
-      preview: img,
-      title: 'Project Wizard ',
-      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
+      asciicinema: 'casts/376512.cast',
+      title: 'Task Loader',
+      summary: `<p>Use Task Loader as entry point for AI/ML task in Jupyter Notebook, Jupyter Lab or simple Python.</p>
+                <p>Task Loader automatically loads configured Python tools for AI/ML task inside project, and also could be used  to staff up all additional Python tools for team inside tasks configurations. Configure tools you wish to be used in a project by default and let all your team know about it.</p>`
     },
     {
       id: 3,
-      preview: img,
-      title: 'Data Loader and Data Store',
-      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
+      asciicinema: 'casts/376519.cast',
+
+      title: 'Data Loader & Data Store',
+      summary: `<p>Use client-server datastore as central storage of raw tabular data.</p> 
+                <p>Data Store stores tabular data from different sources in one place available through REST API.</p>
+                <p>Data Loader is a Python tool to play along with Data Store. Tool enforces configured data types, converts data into Pandas dataframes and controls data scope for AI/ML task. Load any configured data into your Python with simple client interface.</p>`
     },
     {
       id: 4,
-      preview: img,
-      title: 'Feature Loader and Feature Store',
-      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
+      asciicinema: 'casts/376515.cast',
+      title: 'Feature Loader & Feature Store',
+      summary: `<p>Use client-server Feature Store to share features for AI/ML task between team members.</p>
+                <p>Feature Store stores tabular features for task available trough REST API.</p>
+                <p>Feature Loader is a Python tool to play along with Feature Store. It’s functions are similar to Data Loader but with flat model to access any configured and available features.</p>`
     },
     {
       id: 5,
-      preview: img,
-      title: 'Metrics Service and Submits Storage',
-      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
+      preview: img2,
+      title: 'Submitter, Submits Provider & Metrics Service',
+      summary: `<p>Submitter gathers results of AI/ML tasks in Submits Provider. Metrics Service scores it.</p>
+                <p>Submitter is a Python tool which allows user to submit notebooks, Python code, test predicts, images and more into Submits Provider. Submitter is integrated with Jupyter Notebook and Jupyter Lab to automatically save all artefacts on submit. Metrics Service checks out stored submits and counts metric values.</p>`
     },
     {
       id: 6,
-      preview: img,
-      title: 'Feature Extractor and Prediction Builder',
-      summary: '<p>Check out, compare and share scores of your team test via GUI.</p> <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, etc.</p> <p>Beadcrumbs on top of the window allows you to switch to all available tasks in project.</p>'
+      preview: img2,
+      title: 'Target loader',
+      summary: `<p>Target Loader is a python tool to load target for AI/ML task.</p>
+                <p>Target Loader doesn’t store target as tabular data nor any close to features. Target Loader load train target values and doesn’t show any test target values to the user. Althrough it does load empty data structure to be filled for task solution. All indexes in train/test target values are synced with indexes of features from Feature Loader.</p>`
     }
   ];
 
   return (
-    <>
+    <div className={styles.ourWorks}>
       <h3 className={styles.heading}>Tools for team workflow</h3>
       <Carousel items={works}/>
-    </>
+    </div>
   )
 }

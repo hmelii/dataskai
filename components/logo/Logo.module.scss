@@ -1,26 +1,28 @@
 @import '../../styles/utils/vars';
 
 .logo {
-  background: url("../../images/LOGO.svg") no-repeat 50%;
-  background-size: contain;
-  width: 81px;
-  height: 20px;
+  background: url("../../images/LOGO.svg") no-repeat;
   position: absolute;
-  top: 0;
+  top: 14px;
   left: 55px;
-  bottom: 0;
+  font-size: 1.6rem;
   margin: auto;
+  color: #F2F2F2;
 
   @media (min-width: $tableWidth) {
-    width: 120px;
-    height: 56px;
-    top: 18px;
+
+    top: 24px;
     left: 0;
   }
 }
 
 .logoLink {
   display: block;
-  width: inherit;
-  height: inherit;
+  height: 25px;
+
+  padding-left: 43px;
+
+  color: inherit;
+  line-height: (27 / 16);
+
 }

@@ -1,15 +1,23 @@
 @import '../../styles/utils/vars';
+.ourProjects {
 
+  margin-bottom: 70px;
+
+  @media (min-width: $tableWidth) {
+    margin-bottom: 160px;
+  }
+}
 .heading {
   margin: 0 0 13px;
   color: #fff;
-  font-size: 3.4rem;
-  font-weight: bold;
-  line-height: 1.1;
+  font-size: 3rem;
+  line-height: (36 / 30);
+  font-weight: normal;
 
   @media (min-width: $tableWidth) {
-    margin-bottom: 24px;
+    margin-bottom: 34px;
     font-size: 4.2rem;
+    font-weight: 600;
     line-height: (42 / 56);
   }
 }

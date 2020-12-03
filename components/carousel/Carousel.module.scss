@@ -2,7 +2,6 @@
 
 
 .carousel {
-  margin-bottom: 60px;
 
   p {
     margin: 0 0 8px;
@@ -13,33 +12,51 @@
 .carouselTabs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 0 -7px 44px;
+  grid-gap: 6px 0;
+  margin: 0 -7px 35px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tableWidth) {
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 0 15px;
+    grid-template-columns: repeat(auto-fit, 140px);
+    justify-content: space-between;
+    grid-gap: 0;
   }
 }
 
 .carouselTabsItem {
   margin: 0;
   padding: 0;
-  font-size: 1.6rem;
+  display: flex;
+  font-size: 1.4rem;
   color: #f2f2f2;
-  line-height: (20 / 16);
+  line-height: (20 / 14);
+
 }
 
 .carouselTabsLink {
   display: block;
+
   padding: 7px;
   color: inherit;
   transition: all .3s ease;
+
+  @media (min-width: $tableWidth) {
+    border-bottom: 2px solid transparent;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .carouselTabsLinkActive {
+
   color: $primary-color;
+
+  @media (min-width: $tableWidth) {
+    border-bottom-color: #4DCF37;
+  }
 }
 
 .carouselItem {
@@ -61,14 +78,14 @@
 
   @media (min-width: $tableWidth) {
     order: 2;
-    margin-left: 17px;
+    margin: 0 0 0 17px;
   }
 }
 
 .carouselTitle {
   margin-bottom: 15px;
   font-size: 2rem;
-  line-height: 1.4;
+  line-height: (28 / 20);
 
   @media (min-width: $tableWidth) {
     margin-bottom: 24px;
@@ -79,7 +96,7 @@
 
 .carouselSummary {
   font-size: 1.4rem;
-  line-height: 1.4;
+  line-height: (20 / 14);
 
   @media (min-width: $tableWidth) {
     font-size: 1.8rem;
@@ -97,10 +114,12 @@
   width: 100%;
 }
 
+.carouselAscii,
 .carouselMedia {
   padding-bottom: 56.25%;
   overflow: hidden;
   position: relative;
+
 
   iframe {
     position: absolute;
@@ -108,5 +127,13 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+
+.carouselAscii {
+  padding-bottom: 130%;
+
+  @media (min-width: $tableWidth) {
+    padding-bottom: 76.25%;
   }
 }
