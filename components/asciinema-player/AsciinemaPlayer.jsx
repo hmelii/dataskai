@@ -3,14 +3,11 @@ import React, { useEffect, useRef } from "react";
 export default function AsciinemaPlayer({ src }) {
   const asciicinemaRef = useRef(null);
 
-
-
   useEffect(() => {
 
     if (typeof window === 'undefined') {
       return
     }
-
 
     asciinema.player.js.CreatePlayer(
       asciicinemaRef.current,

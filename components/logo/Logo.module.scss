@@ -12,6 +12,10 @@
   @media (min-width: $tableWidth) {
 
     top: 24px;
+    left: 20px;
+  }
+
+  @media (min-width: $desktopWidth) {
     left: 0;
   }
 }

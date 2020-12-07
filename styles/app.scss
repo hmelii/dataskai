@@ -116,3 +116,12 @@ a {
   top: 0;
   left: 0;
 }
+
+.slick-slider {
+
+  user-select: text!important;
+}
+.slick-list.draggable {
+
+  user-select: none!important;
+}

@@ -34,7 +34,7 @@ function CarouselItem({ item, imageClick }) {
   return (
     <div className={styles.carouselItem}>
       <div className={styles.carouselFig}>
-        {item.preview ? <a className={styles.carouselLink} onClick={() => imageClick(item.preview)}><img className={styles.carouselImg} src={item.preview} alt={item.title}/></a>  : item.html ? <div className={styles.carouselMedia} dangerouslySetInnerHTML={{ __html: item.html }}/> : item.asciicinema ? <div className={styles.carouselAscii}><AsciinemaPlayer src={ item.asciicinema } /></div> : ''}
+        {item.preview ? <a className={styles.carouselLink} onClick={() => imageClick(item.image)}><img className={styles.carouselImg} src={item.preview} alt={item.title}/></a>  : item.html ? <div className={styles.carouselMedia} dangerouslySetInnerHTML={{ __html: item.html }}/> : item.asciicinema ? <div className={styles.carouselAscii}><AsciinemaPlayer src={ item.asciicinema } /></div> : ''}
       </div>
       <div className={styles.carouselContext}>
         <div className={styles.carouselTitle}>
@@ -62,6 +62,7 @@ function CarouselItems({ items, handleChangeCurrentIndex, clickedTabIndex, image
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    draggable: false,
     variableWidth: variableWidth,
     beforeChange: (current, next) => {
       handleChangeCurrentIndex(next)

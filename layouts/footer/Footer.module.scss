@@ -79,9 +79,14 @@
 
   @media (min-width: $tableWidth) {
     margin: 0;
-    padding-right: 90px;
+    padding-right: 20px;
     font-size: 1.4rem;
     line-height: (20 / 14);
+  }
+
+  @media (min-width: $desktopWidth) {
+    padding-right: 90px;
+
   }
 
   p {
@@ -114,9 +119,13 @@
     width: 146px;
     position: absolute;
     top: 27px;
-    left: 568px;
+    right: 163px;
     font-size: 1.6rem;
     line-height: (24 / 16);
+
+  }
+
+  @media (min-width: $desktopWidth) {
 
   }
 }
@@ -131,7 +140,8 @@
     width: 146px;
     position: absolute;
     top: 57px;
-    left: 568px;
+    right: 163px;
+
     font-size: 1.6rem;
     line-height: (24 / 16);
 

@@ -17,10 +17,19 @@
   padding: 0;
   list-style: none;
 
+
+
   @media (min-width: $tableWidth) {
-    grid-template-columns: repeat(auto-fit, 140px);
+    grid-template-columns: repeat(4, 140px);
     justify-content: space-between;
+    grid-gap: 12px 0;
+
+  }
+
+  @media (min-width: $desktopWidth) {
+    grid-template-columns: repeat(auto-fit, 140px);
     grid-gap: 0;
+
   }
 }
 
@@ -131,7 +140,7 @@
 }
 
 .carouselAscii {
-  padding-bottom: 130%;
+  padding-bottom: 162%;
 
   @media (min-width: $tableWidth) {
     padding-bottom: 76.25%;

@@ -15,9 +15,12 @@ function Slogan() {
 }
 
 function NavItem({ item }) {
+  const handlePrevent = (event) => {
+    event.preventDefault()
+  }
   return (
     <li className={styles.navItem}>
-      <a className={styles.navLink} href={item.url}>{item.name}</a>
+      <a className={styles.navLink} href={item.url} onClick={handlePrevent}>{item.name}</a>
     </li>
   )
 }
@@ -26,7 +29,7 @@ function Nav() {
   const items = [
     {
       id: 1,
-      url: '/',
+      url: '#',
       name: 'Documentation',
     },
    /* {
@@ -51,7 +54,7 @@ function Nav() {
     },*/
     {
       id: 6,
-      url: '/',
+      url: '#',
       name: 'We hire',
     },
   ]

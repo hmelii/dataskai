@@ -2,8 +2,14 @@
 
 .content {
   padding: 38px 18px 120px;
+
   @media (min-width: $tableWidth) {
+    padding: 50px 20px 60px;
+
+  }
+
+  @media (min-width: $desktopWidth) {
     padding: 100px 0 120px;
   }
 
-  }
+}

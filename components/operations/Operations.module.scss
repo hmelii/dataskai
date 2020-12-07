@@ -39,8 +39,16 @@
 
   @media (min-width: $tableWidth) {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-gap: 29px;
+  }
+
+  @media (min-width: $desktopWidth) {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0 29px;
+
+
   }
 }
 

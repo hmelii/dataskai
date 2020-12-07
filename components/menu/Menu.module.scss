@@ -7,10 +7,27 @@
   z-index: 100;
   transform: translate(0, -50%);
 
+
+
   @media (min-width: $tableWidth) {
     left: 140px;
-    right: -20px;
+    right: 20px;
     top: 40px;
+  }
+
+  @media (min-width: $desktopWidth) {
+    right: -20px;
+  }
+}
+
+.menuActive {
+  position: fixed;
+  top: 25px;
+
+  @media (min-width: $tableWidth) {
+    position: absolute;
+    top: 40px;
+
   }
 }
 
@@ -47,7 +64,6 @@
     grid-auto-flow: column;
     justify-content: right;
     grid-gap: 0 50px;
-
   }
 }
 
