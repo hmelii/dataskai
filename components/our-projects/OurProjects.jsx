@@ -15,8 +15,8 @@ export default function OurProjects() {
     },
     {
       id: 2,
-      preview: '/images/1x/Pic_project_structure.png',
-      image: '/images/4x/Pic_project_structure_4x.png',
+      preview: 'images/1x/Pic_project_structure.png',
+      image: 'images/4x/Pic_project_structure_4x.png',
       title: 'Project structure',
       summary: `<p>All instances of DATASKAI projects has templated structure.
                 <p>This behaviour is an answer to AI/ML exploration challenge. It contains all files related to project and intended to be in sync with all clients. To fulfill this requirement project files are stored in git.</p>
@@ -24,8 +24,8 @@ export default function OurProjects() {
     },
     {
       id: 3,
-      preview: '/images/1x/img.png',
-      image: '/images/4x/img_4x.png',
+      preview: 'images/1x/img.png',
+      image: 'images/4x/img_4x.png',
       title: 'Data & features naming conventions',
       summary: `<p>Data and features naming conventions solves a lot of issues inside your team and in communication with experts.</p>
                 <p>It’s easy to understand origin and all the transformations applied to data. You can enforce naming conventions in feature extractors and solve miscommunication at the root of a problem. You can use simple name resolving to give a suggestion and explanation to user or expert when you communicate.</p>`
@@ -49,8 +49,8 @@ export default function OurProjects() {
     },
     {
       id: 6,
-      preview: '/images/1x/with scrinshots.png',
-      image: '/images/4x/with scrinshots_4x.png',
+      preview: 'images/1x/with scrinshots.png',
+      image: 'images/4x/with scrinshots_4x.png',
       title: 'Logging and monitoring',
       summary: `<p>DATASKAI has built-in support for graylog, netdata and redash.</p>
                 <p>All deployed services are connected to graylog by default, so all logs are collected in one logging and monitoring system. Netdata is used to check network load. Redash is used to visualize data, features, predictions and more.</p>`
