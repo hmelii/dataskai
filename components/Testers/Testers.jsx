@@ -17,8 +17,8 @@ export default function Testers() {
         </div>
       </div>
       <div className={styles.docs}>
-        <h4 className={styles.subHeading}>Read our <a className={styles.link} target="_blank" href="http://www.mlbinf.com">documentation</a></h4>
-        <p>DATASKAI has already helped <a className={styles.link} href="#" onClick={handlePrevent}>the bioinformatics team</a>  to construct accurate genotype-to-phenotype predictive models based on modern machine learning methods.</p>
+        <h4 className={styles.subHeading}>Read our documentation</h4>
+        <p>DATASKAI has already helped <a className={styles.link} target="_blank" href="http://www.mlbinf.com">the bioinformatics team</a>  to construct accurate genotype-to-phenotype predictive models based on modern machine learning methods.</p>
       </div>
     </div>
   )

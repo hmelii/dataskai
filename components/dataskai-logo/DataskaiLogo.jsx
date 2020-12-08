@@ -1,9 +1,7 @@
 import styles from './DataskaiLogo.module.scss';
 
 export default function DataskaiLogo() {
-  const handlePrevent = (event) => {
-    event.preventDefault()
-  }
+
   return (
     <div className={styles.dataskaiLogo}>
       <div className={styles.dataskaiLogoTitle}>
@@ -11,7 +9,7 @@ export default function DataskaiLogo() {
       </div>
       <div className={styles.dataskaiLogoImage} />
       <div className={styles.dataskaiLogoText}>
-        the framework for AI/ML projects concentrated on <a href="#" onClick={handlePrevent}>team work</a>  and rapid development
+        the framework for AI/ML projects concentrated on <span className={styles.link}>team work</span>  and rapid development
       </div>
     </div>
   )

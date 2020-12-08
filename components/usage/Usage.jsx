@@ -9,8 +9,8 @@ export default function Usage() {
       <div className={styles.free}>
         <h3 className={styles.heading}>FREE for <span className={styles.ib}>non-commercial</span> usage</h3>
         <div className={styles.freeSummary}>
-        <p>The version for non-commercial use is free and will always be free. <a href="#" onClick={handlePrevent}>See the license</a> .</p>
-        <p>If you want to use our tool for making money in a commercial organization, you will need to <a href="#" onClick={handlePrevent}>purchase a license.</a></p>
+        <p>The version for non-commercial use is free and will always be free.</p>
+        <p>If you want to use our tool for making money in a commercial organization, you will need to purchase a license.</p>
         </div>
       </div>
       {/*<form className={styles.form}>

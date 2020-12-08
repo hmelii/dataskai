@@ -15,12 +15,9 @@ function Slogan() {
 }
 
 function NavItem({ item }) {
-  const handlePrevent = (event) => {
-    event.preventDefault()
-  }
   return (
     <li className={styles.navItem}>
-      <a className={styles.navLink} href={item.url} onClick={handlePrevent}>{item.name}</a>
+      {item.name}
     </li>
   )
 }
@@ -32,26 +29,7 @@ function Nav() {
       url: '#',
       name: 'Documentation',
     },
-   /* {
-      id: 2,
-      url: '/',
-      name: 'Contact us',
-    },
-    {
-      id: 3,
-      url: '/',
-      name: 'Beta Testing',
-    },
-    {
-      id: 4,
-      url: '/',
-      name: 'About us',
-    },
-    {
-      id: 5,
-      url: '/',
-      name: 'List of best practicies',
-    },*/
+
     {
       id: 6,
       url: '#',
@@ -69,19 +47,19 @@ function Nav() {
 
 function Terms() {
   return (
-    <div className={styles.terms}><a className={styles.termsLink}>Terms of service</a></div>
+    <div className={styles.terms}>Terms of service</div>
   )
 }
 
 function Privacy() {
   return (
-    <div className={styles.privacy}><a className={styles.privacylink}>Privacy policy</a></div>
+    <div className={styles.privacy}>Privacy policy</div>
   )
 }
 
 function ContactUs() {
   return (
-    <div className={styles.contactUs}>We would be happy to hear from you. Don’t hesitate to send us your thoughts if you have any ideas or comments — <a href="mailto:betatesters@dataskai.com">betatesters@dataskai.com</a> </div>
+    <div className={styles.contactUs}>We would be happy to hear from you. Don’t hesitate to send us your thoughts if you have any ideas or comments — <a className={styles.link} href="mailto:betatesters@dataskai.com">betatesters@dataskai.com</a> </div>
   )
 }
 
