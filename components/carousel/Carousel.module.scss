@@ -1,13 +1,10 @@
 @import '../../styles/utils/vars';
 
-
 .carousel {
-
   p {
     margin: 0 0 8px;
   }
 }
-
 
 .carouselTabs {
   display: grid;
@@ -17,19 +14,19 @@
   padding: 0;
   list-style: none;
 
-
-
   @media (min-width: $tableWidth) {
     grid-template-columns: repeat(4, 140px);
     justify-content: space-between;
     grid-gap: 12px 0;
+  }
 
+  @media (min-width: $smDesktopWidth) {
+    grid-template-columns: repeat(6, 140px);
   }
 
   @media (min-width: $desktopWidth) {
     grid-template-columns: repeat(auto-fit, 140px);
     grid-gap: 0;
-
   }
 }
 
@@ -40,7 +37,6 @@
   font-size: 1.4rem;
   color: #f2f2f2;
   line-height: (20 / 14);
-
 }
 
 .carouselTabsLink {
@@ -60,7 +56,6 @@
 }
 
 .carouselTabsLinkActive {
-
   color: $primary-color;
 
   @media (min-width: $tableWidth) {
