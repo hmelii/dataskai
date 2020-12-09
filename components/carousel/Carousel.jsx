@@ -100,7 +100,6 @@ export default function Carousel({ items }) {
   }
 
   const imageClick = (image) => {
-    console.log(image)
     setImages([image]);
     setIsOpen(true);
   }
