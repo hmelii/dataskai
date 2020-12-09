@@ -27,7 +27,7 @@ export default function LightboxComponent({ images, isOpen, closeClick }) {
       {isOpen && (
         <Lightbox
           mainSrc={images[photoIndex]}
-          enableZoom={false}
+          enableZoom={true}
           imagePadding={variableWidth ? 10 : 100}
           nextSrc={images[(photoIndex + 1) % images.length]}
           prevSrc={images[(photoIndex + images.length - 1) % images.length]}
