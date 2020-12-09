@@ -24,6 +24,6 @@ export default function AsciinemaPlayer({ src }) {
   }, []);
 
   return (
-    <divr ref={asciicinemaRef} />
+    <div ref={asciicinemaRef} />
   )
 }
