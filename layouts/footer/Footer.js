@@ -9,7 +9,7 @@ function Logo() {
 function Slogan() {
   return (
     <div className={styles.slogan}>
-      <p>Dataskai is developed by a team of programmers and ML-enthusiasts who believe that teamwork and best practices are the future of AI/ML solutions.</p>
+      Dataskai is developed by a team of programmers and ML-enthusiasts who believe that teamwork and best practices are the future of AI/ML solutions.
     </div>
   )
 }
@@ -63,14 +63,22 @@ function ContactUs() {
   )
 }
 
+function Copyright() {
+  return (
+    <div className={styles.copyright}>Ⓒ DATASKAI, 2021</div>
+  )
+}
+
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <Logo />
       <Slogan />
-      <Nav />
-      <Terms />
-      <Privacy />
+      {/*<Nav />*/}
+      {/*<Terms />*/}
+      {/*<Privacy />*/}
+      <Copyright />
+
       <ContactUs />
     </footer>
   )
