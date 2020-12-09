@@ -20,8 +20,8 @@
 .dataskaiLogoTitle {
   width: 163px;
   margin-bottom: 13px;
-  font-size: 1.3rem;
-  line-height: 1.4;
+  font-size: 1.4rem;
+  line-height: (20 / 14);
 
   @media (min-width: $tableWidth) {
     width: 309px;
