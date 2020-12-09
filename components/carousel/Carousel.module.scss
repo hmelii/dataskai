@@ -68,7 +68,7 @@
   padding-right: 24px;
   max-width: 924px;
 
-  @media (min-width: $tableWidth) {
+  @media (min-width: $smDesktopWidth) {
     width: auto;
     display: grid;
     padding: 0;
@@ -80,7 +80,7 @@
 .carouselFig {
   margin-bottom: 35px;
 
-  @media (min-width: $tableWidth) {
+  @media (min-width: $smDesktopWidth) {
     order: 2;
     margin: 0 0 0 17px;
   }
@@ -91,7 +91,7 @@
   font-size: 2rem;
   line-height: (28 / 20);
 
-  @media (min-width: $tableWidth) {
+  @media (min-width: $smDesktopWidth) {
     margin-bottom: 24px;
     font-size: 2.4rem;
     line-height: 1.33;
@@ -135,9 +135,17 @@
 }
 
 .carouselAscii {
-  padding-bottom: 162%;
+  padding-bottom: 0;
 
   @media (min-width: $tableWidth) {
+    padding-bottom: 76.25%;
+  }
+
+  @media (min-width: $smDesktopWidth) {
+    padding-bottom: 82.25%;
+  }
+
+  @media (min-width: $desktopWidth) {
     padding-bottom: 76.25%;
   }
 }
