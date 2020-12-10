@@ -1,25 +1,23 @@
 @import '../../styles/utils/vars';
 
 .testers {
-  padding: 50px 18px 0;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 18px;
   background-size: 100% 100%;
   margin: 0 -18px 70px;
   position: relative;
   z-index: 1;
 
   @media (min-width: $tableWidth) {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 0 100px;
-    padding: 90px 0;
-    grid-template-columns: 1fr 307px;
-    grid-gap: 0 80px;
+    padding: 65px 0 90px;
 
   }
 
-  @media (min-width: $desktopWidth) {
-    grid-gap: 0 160px;
-
-  }
 
 
   p {
@@ -28,23 +26,6 @@
     @media (min-width: $tableWidth) {
       margin: 0 0 16px;
     }
-  }
-}
-
-.looking {
-  margin: -34px -18px 96px;
-  padding: 34px 18px 72px;
-  position: relative;
-  z-index: 1;
-  font-size: 1.6rem;
-  line-height: (20 / 16);
-
-  @media (min-width: $tableWidth) {
-    margin: 0;
-    padding: 0;
-    position: static;
-    font-size: 2.4rem;
-    line-height: (32 / 24);
   }
 
   &:before {
@@ -65,6 +46,25 @@
       transform: translate(50%, 0);
     }
   }
+}
+
+.looking {
+  margin-bottom: 21px;
+  font-size: 1.6rem;
+  line-height: (20 / 16);
+  order: 2;
+
+  @media (min-width: $tableWidth) {
+    flex: 1 1 57%;
+    max-width: 57%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 80px 0 0;
+    font-size: 2.4rem;
+    line-height: (32 / 24);
+  }
+
+
 }
 
 .btn {
@@ -106,14 +106,17 @@
 }
 
 .heading {
-  margin: 0 0 37px;
+  margin: 0 0 21px;
   font-size: 3rem;
   line-height: (36 / 30);
   font-weight: normal;
+  order: 1;
+
 
 
   @media (min-width: $tableWidth) {
-    margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 28px;
     font-size: 4.2rem;
     line-height: (56 / 42);
     font-weight: 600;
@@ -122,40 +125,43 @@
 }
 
 .btns {
-  padding: 38px 0 0;
+  margin-bottom: 21px;
+  order: 3;
+
+  font-size: 1.6rem;
+  line-height: (20 / 16);
 
   @media (min-width: $tableWidth) {
+    flex: 0 1 43%;
+    max-width: 43%;
+    box-sizing: border-box;
+
+    padding-left: 80px;
+    font-size: 2.4rem;
+    line-height: (32 / 24);
     text-align: left;
   }
 
   p {
-    margin: 0 0 3px
+    margin: 0;
+    @media (min-width: $tableWidth) {
+      margin: 0 0 3px
+    }
   }
 }
 
-.subHeading {
-  margin: 0 0 11px;
-  font-size: 2rem;
-  line-height: (28 / 20);
-
-  @media (min-width: $tableWidth) {
-    margin-bottom: 24px;
-    font-size: 2.4rem;
-    line-height: (32 / 24);
-  }
-}
 
 .docs {
-  background: url("../../images/Union.svg") no-repeat;
-  padding: 97px 0 0;
+  font-size: 1.6rem;
+  line-height: (24 / 16);
+  order: 4;
 
-  font-size: 1.4rem;
-  line-height: (20 / 14);
-  position: relative;
-  z-index: 1;
 
   @media (min-width: $tableWidth) {
-    margin-top: 50px;
+    flex: 0 1 57%;
+    max-width: 57%;
+    padding: 28px 80px 0 0;
+    box-sizing: border-box;
     font-size: 1.6rem;
     line-height: (24 / 16);
   }

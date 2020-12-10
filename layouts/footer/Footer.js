@@ -9,7 +9,8 @@ function Logo() {
 function Slogan() {
   return (
     <div className={styles.slogan}>
-      Dataskai is developed by a team of programmers and ML-enthusiasts who believe that teamwork and best practices are the future of AI/ML solutions.
+      DATASKAI is developed by a team of programmers and ML-enthusiasts who believe that teamwork and best practices are the future of AI/ML solutions.
+
     </div>
   )
 }
