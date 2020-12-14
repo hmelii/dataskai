@@ -26,9 +26,9 @@ export default function TypedText({texts}) {
     <div>
     {
       texts && texts[index] ?
-        <Typist key={index} cursor={cursor} startDelay={2000} onTypingDone={typingDone}>
+        <Typist key={index} cursor={cursor} onTypingDone={typingDone}>
           {texts[index]}
-          <Typist.Delay  ms={4000}/>
+          <Typist.Delay  ms={2000}/>
         </Typist>
         : ''
     }
