@@ -32,16 +32,16 @@ export default function OurProjects() {
     },
     {
       id: 4,
-      preview: img3,
-      image: img3,
+      preview: 'images/1x/img__Default_AIML.png',
+      image: 'images/4x/img__Default_AIML.png',
       title: 'Default AI/ML solution architecture',
       summary: `<p>We use straighforward and simplest possible solution. There is a lot of situations where simple is enough.</p> 
                 <p>Our solution include few steps: data gathering -> feature extraction -> model inference. All this stages run asyncronously. Don’t use pipelines if you don’t need it. Use data storage to reuse data for other ML tasks and feature store to share features between colleagues and ML models.</p>`
     },
     {
       id: 5,
-      preview: img3,
-      image: img3,
+      preview: 'images/1x/img__Domain models.png',
+      image: 'images/4x/img__Domain models.png',
       title: 'Domain models in AI/ML projects',
       summary: `<p>Divide code into explicit parts - responsible for AI/ML, and responsible for domain.</p>
                 <p>AI/ML projects struggles from misunderstanding. It’s a struggle inside your team, and a struggle in interaction between team and domain experts.</p>

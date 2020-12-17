@@ -12,4 +12,4 @@ Frontend SPA приложение на React.
   * выполнить в корне проекта `npm install`  
   * [development-only] Запустить dev server `npm run dev`
   * [production-only] Запустить продакшн сборку `npm run build`
-  * [production-only] Для генерации статичной вёрстки `npm run build && npm run export`  
+  * [production-only] Для генерации статичной вёрстки `npm run static`  
