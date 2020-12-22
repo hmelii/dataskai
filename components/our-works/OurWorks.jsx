@@ -6,9 +6,8 @@ export default function OurWorks() {
   const works = [
     {
       id: 1,
-      /*preview: 'images/1x/Task_page__Table.png',
-      image: 'images/4x/Task_page__Table_4x.png',*/
-      html: '<iframe width="560" height="315" src="https://www.youtube.com/embed/HAaDadbtq5M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      preview: 'images/1x/Task_page__Table.png',
+      image: 'images/4x/Task_page__Table_4x.png',
       title: 'Team Leaderboard',
       summary: `<p>Check out, compare and share scores of your team test via GUI.</p> 
                 <p>Leaderboard is one of the main parts of the team workflow.  It unites your team around the task and provides you with instrument to checkout and explore ML/AI task solutions and metrics, make fast text search for submits, switch between tasks, compare results in task and more.</p>`
@@ -38,8 +37,9 @@ export default function OurWorks() {
     },
     {
       id: 5,
-      preview: img3,
-      image: img3,
+/*      preview: img3,
+      image: img3,*/
+      html: '<iframe width="560" height="315" src="https://www.youtube.com/embed/HAaDadbtq5M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
       title: 'Submitter, Submits Provider & Metrics Service',
       summary: `<p>Submitter gathers results of AI/ML tasks in Submits Provider. Metrics Service scores it.</p>
                 <p>Submitter is a Python tool which allows user to submit notebooks, Python code, test predicts, images and more into Submits Provider. Submitter is integrated with Jupyter Notebook and Jupyter Lab to automatically save all artefacts on submit. Metrics Service checks out stored submits and counts metric values.</p>`
