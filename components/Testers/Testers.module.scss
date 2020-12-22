@@ -56,8 +56,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0 80px 0 0;
-    font-size: 2.4rem;
-    line-height: (32 / 24);
+    font-size: 1.6rem;
+    line-height: (24 / 16);
   }
 
 
@@ -154,7 +154,7 @@
   @media (min-width: $tableWidth) {
     flex: 0 1 57%;
     max-width: 57%;
-    padding: 28px 80px 0 0;
+    padding: 18px 80px 0 0;
     box-sizing: border-box;
     font-size: 1.6rem;
     line-height: (24 / 16);
