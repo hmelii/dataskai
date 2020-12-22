@@ -7,8 +7,7 @@ export default function OurProjects() {
   const projects = [
     {
       id: 1,
-      preview: img3,
-      image: img3,
+      asciicinema: 'casts/380511.cast',
       title: 'Wizard',
       summary: `<p>Create new project instances and configure existing with CLI.</p>
                 <p>Wizard is a CLI tool for installation, creating project instances, configuring services, starting/stopping services, managing tasks, domain models, managing client docker containers and more.</p>`
@@ -60,7 +59,7 @@ export default function OurProjects() {
   return (
     <div className={styles.ourProjects}>
       <h3 className={styles.heading}>Keep your project organized</h3>
-      <Carousel items={projects} />
+      <Carousel items={projects}/>
     </div>
   )
 }

@@ -1,12 +1,13 @@
 @import '../../styles/utils/vars';
-.ourProjects {
 
+.ourProjects {
   margin-bottom: 70px;
 
   @media (min-width: $tableWidth) {
     margin-bottom: 160px;
   }
 }
+
 .heading {
   margin: 0 0 13px;
   color: #fff;

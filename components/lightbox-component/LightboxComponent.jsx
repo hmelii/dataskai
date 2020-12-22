@@ -1,6 +1,6 @@
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import useWindowSize from "../../hooks/UseWindowResize";
 
 export default function LightboxComponent({ images, isOpen, closeClick }) {
@@ -16,7 +16,6 @@ export default function LightboxComponent({ images, isOpen, closeClick }) {
       }
     })
   }, []);
-
 
   useEffect(() => {
     setVariableWidth(widthWidth < 768);

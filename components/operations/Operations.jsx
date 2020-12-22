@@ -3,8 +3,8 @@ import styles from './Operations.module.scss';
 function ListItem({ item }) {
   return (
     <li className={styles.listItem}>
-      <div className={styles.listTitle}>{ item.title }</div>
-      <div className={styles.listSummary}>{ item.summary }</div>
+      <div className={styles.listTitle}>{item.title}</div>
+      <div className={styles.listSummary}>{item.summary}</div>
     </li>
   )
 }
@@ -12,11 +12,10 @@ function ListItem({ item }) {
 function List({ items }) {
   return (
     <ul className={styles.list}>
-      { items.map(item => <ListItem item={item} key={item.id} />) }
+      {items.map(item => <ListItem item={item} key={item.id}/>)}
     </ul>
   )
 }
-
 
 export default function Operations() {
   const operations = [
@@ -40,14 +39,13 @@ export default function Operations() {
       title: 'MLOps',
       summary: 'Deploy AI/ML solutions  in framework instance. Engage Datascientists with end-to-end responsibility for the whole AI/ML solution.'
     }
-
   ];
 
   return (
     <div className={styles.operations}>
       <h3 className={styles.heading}>Make frequent operations easier </h3>
       <h4 className={styles.subHeading}>even don't do it at all</h4>
-      <List items={operations} />
+      <List items={operations}/>
     </div>
   )
 }

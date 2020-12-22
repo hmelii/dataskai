@@ -15,9 +15,9 @@ export default function AboutUs() {
             `Dev/Prod parity\n in ML`,
             `Keep it simple,\n sweetie`
           ]
-        } />
+        }/>
       </h3>
-      <p>We want to spread the <span className={styles.link}>best practices of teamwork and programming</span>  in teams developing ML/AI projects.</p>
+      <p>We want to spread the <span className={styles.link}>best practices of teamwork and programming</span> in teams developing ML/AI projects.</p>
       <p>We think that existing products do not offer the proper tradeoff between speed and reliability of the resulting ML/AI solution.</p>
     </div>
   )

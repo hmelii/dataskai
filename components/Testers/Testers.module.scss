@@ -15,10 +15,7 @@
     flex-wrap: wrap;
     margin: 0 0 100px;
     padding: 65px 0 90px;
-
   }
-
-
 
   p {
     margin: 0 0 8px;
@@ -31,7 +28,6 @@
   &:before {
     content: '';
     background: linear-gradient(278.03deg, rgba(14, 32, 68, 1) 0%, rgba(205, 15, 197, .4) 50%, rgba(205, 15, 197, 0) 100%);
-
     position: absolute;
     top: 0;
     left: 0;
@@ -111,8 +107,6 @@
   line-height: (36 / 30);
   font-weight: normal;
   order: 1;
-
-
 
   @media (min-width: $tableWidth) {
     width: 100%;

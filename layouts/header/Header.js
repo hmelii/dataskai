@@ -5,8 +5,8 @@ import Menu from "../../components/menu/Menu";
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Logo />
-      <Menu />
+      <Logo/>
+      <Menu/>
     </header>
   )
 }

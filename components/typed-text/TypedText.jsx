@@ -2,7 +2,7 @@ import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import { useState } from "react";
 
-export default function TypedText({texts}) {
+export default function TypedText({ texts }) {
   const [index, setIndex] = useState(0);
 
   const cursor = {
@@ -14,24 +14,19 @@ export default function TypedText({texts}) {
   };
 
   const typingDone = () => {
-
     index < (texts.length - 1) ? setIndex(index + 1) : setIndex(0);
   }
 
-
-
-
-
   return (
     <div>
-    {
-      texts && texts[index] ?
-        <Typist key={index} cursor={cursor} onTypingDone={typingDone}>
-          {texts[index]}
-          <Typist.Delay  ms={2000}/>
-        </Typist>
-        : ''
-    }
+      {
+        texts && texts[index] ?
+          <Typist key={index} cursor={cursor} onTypingDone={typingDone}>
+            {texts[index]}
+            <Typist.Delay ms={2000}/>
+          </Typist>
+          : ''
+      }
     </div>
   )
 }

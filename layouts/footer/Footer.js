@@ -2,7 +2,7 @@ import styles from './Footer.module.scss';
 
 function Logo() {
   return (
-    <div className={styles.logo} />
+    <div className={styles.logo}/>
   )
 }
 
@@ -40,7 +40,7 @@ function Nav() {
   return (
     <nav className={styles.nav}>
       <ul className={styles.navList}>
-        { items.map(item => <NavItem item={item} key={item.id} />) }
+        {items.map(item => <NavItem item={item} key={item.id}/>)}
       </ul>
     </nav>
   )
@@ -60,7 +60,7 @@ function Privacy() {
 
 function ContactUs() {
   return (
-    <div className={styles.contactUs}>We would be happy to hear from you. Don’t hesitate to send us your thoughts if you have any ideas or comments — <a className={styles.link} href="mailto:betatesters@dataskai.com">betatesters@dataskai.com</a> </div>
+    <div className={styles.contactUs}>We would be happy to hear from you. Don’t hesitate to send us your thoughts if you have any ideas or comments — <a className={styles.link} href="mailto:betatesters@dataskai.com">betatesters@dataskai.com</a></div>
   )
 }
 
@@ -73,14 +73,14 @@ function Copyright() {
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <Logo />
-      <Slogan />
+      <Logo/>
+      <Slogan/>
       {/*<Nav />*/}
       {/*<Terms />*/}
       {/*<Privacy />*/}
-      <Copyright />
+      <Copyright/>
 
-      <ContactUs />
+      <ContactUs/>
     </footer>
   )
 }

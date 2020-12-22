@@ -63,17 +63,14 @@
 
   @media (min-width: $tableWidth) {
     margin-bottom: 80px;
-
     font-size: 2.4rem;
     line-height: (32 / 24);
-
   }
 
   p {
     margin: 0 0 12px;
 
     @media (min-width: $tableWidth) {
-
       margin: 0 0 12px;
     }
   }
@@ -129,7 +126,6 @@
     }
   }
 }
-
 
 
 .btns {

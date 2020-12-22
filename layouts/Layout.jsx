@@ -21,18 +21,13 @@ export default function Layot({ children }) {
         <link rel="mask-icon" href="safari-pinned-tab.svg" color="#7a3a85"/>
         <meta name="msapplication-TileColor" content="#da532c"/>
         <meta name="theme-color" content="#ffffff"/>
-
-
       </Head>
       <Wrapper>
-
         <Header/>
         <Content>
           {children}
         </Content>
-
         <Footer/>
-
       </Wrapper>
     </>
   )

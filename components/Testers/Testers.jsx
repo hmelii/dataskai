@@ -18,7 +18,7 @@ export default function Testers() {
         <p><a className={styles.link} href={'mailto:betatesters@dataskai.com'}>betatesters@dataskai.com</a></p>
       </div>
       <div className={styles.docs}>
-       DATASKAI already help <a className={styles.link} target="_blank" href="http://www.mlbinf.com">the bioinformatics team</a> to construct accurate genotype-to-phenotype predictive models based on modern machine learning methods!
+        DATASKAI already help <a className={styles.link} target="_blank" href="http://www.mlbinf.com">the bioinformatics team</a> to construct accurate genotype-to-phenotype predictive models based on modern machine learning methods!
       </div>
     </div>
   )
